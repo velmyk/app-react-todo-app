@@ -10,4 +10,4 @@ Stack of technologies: [stackshare.io](http://stackshare.io/velmyk/react-redux-t
 
 To see working app please folow the [link](https://react-redux-todo.herokuapp.com/).
 
-![Main screen](https://www.dropbox.com/s/telev68mi970v5p/main-screen.png?dl=0)
+![Main screen](https://www.dropbox.com/s/telev68mi970v5p/main-screen.png?dl=1)
