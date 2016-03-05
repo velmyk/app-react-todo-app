@@ -7,8 +7,6 @@ script:
   - npm test
 after_success: 
   - npm run coveralls
-before_deploy:
-  - npm run dist
 deploy:
   provider: heroku
   api_key:
