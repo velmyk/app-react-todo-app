@@ -1,3 +1,5 @@
+const deepFreeze = require('deep-freeze');
+
 import { todoAppReducer } from 'actions/todoAppReducer';
 
 describe('todo app reducer', () => {
@@ -32,6 +34,9 @@ describe('todo app reducer', () => {
 				],
 				visibilityFilter: 'SHOW_ALL'
 			};
+
+			deepFreeze(stateBefore);
+			deepFreeze(stateAfter);
 		});
 
 		it('should change completed property of todo', () => {
@@ -68,6 +73,9 @@ describe('todo app reducer', () => {
 				],
 				visibilityFilter: 'SHOW_ALL'
 			};
+
+			deepFreeze(stateBefore);
+			deepFreeze(stateAfter);
 		});
 
 		it('should create todo with correct properties', () => {
@@ -109,6 +117,9 @@ describe('todo app reducer', () => {
 				],
 				visibilityFilter: 'SHOW_ALL'
 			};
+
+			deepFreeze(stateBefore);
+			deepFreeze(stateAfter);
 		});
 
 		it('should delete todo with correct properties', () => {
@@ -136,6 +147,9 @@ describe('todo app reducer', () => {
 				todos: [],
 				visibilityFilter: visibilityFilter
 			};
+
+			deepFreeze(stateBefore);
+			deepFreeze(stateAfter);
 		});
 
 		it('should set new visibility filter', () => {
