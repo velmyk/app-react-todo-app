@@ -1,8 +1,13 @@
 language: node_js
 node_js:
-  - '4.1'
+- '4.1'
 before_script:
-  - 'npm install'
+- npm install
 script:
-  - 'npm test'
-after_success: 'npm run coveralls'
+- npm test
+after_success: npm run coveralls
+deploy:
+  provider: heroku
+  api_key:
+    secure: 4dL233lcJpwMGC1Bx5VmXVXPm4g9kuJP8f0AvIk3/Isl04k1x5xZBa2W5f6uvqXm98y8durFxbWa2t7QNuzjHzhkDOI0Qcixfm+RYi+WAkMaxjQlbuF5D1yseL30c/lM/Colm9a9WK3TrnT5M6jo5TJ5SUpcgHMWy4pEtfBx0CWE/lWbAR21nXR0qeBSWUvMv8wNzaIgG5Cd4k1NaPKuF0LUgMsQ3sx//qgcNEkcMKqLa3XTrUC0NOxJHQkRDwendfg4C3CN06Kl6lhZLdCfbUNZumSKuB0WrOljJ4lh5G1gBBxmOZw8qmpm19NHD8uU2YhnKd+fRhROwqWeZguH6Wgfil6ILfesRC6G6uLMW5jJcZTqsjLqpnFeblUekKrui+ZTTbDbaJNCOqMCApjgoehthnuD9VL/y7FITTODeWuET7djNIrERjNzTgfuDmaAhXkooJHDePW2ic/yaGEWz5ZSORSNAPbr2t4fMd7PkueYucliBwGPc6XK/N07ylqi8Nh6+XILHX69xQW1gPW7nn0BCTZyDino8h6pALiICG/UPZVf/ZItYV/b3f9PKSBq7zkdehbU4mcrly70raCIuROos37F4G5v5AhaZQjuPeLJr/iti3XtQ2xmpI2mpULzXuQIwHkYDE95tcbQoksUkNT4VeDE3CxXmX40f5dr2g4=
+  app: react-redux-todo
